@@ -1,0 +1,41 @@
+<?php
+
+$message1 = '0@sn9sirppa@#?ia\'jgtvryko1';
+
+$long = strlen($message1) / 2;
+$sousChaine = substr($message1,6,$long);
+
+$rempmessage = str_replace('@#?',' ',$message1);
+$invmessage = strrev($rempmessage);
+
+echo $invmessage, '\n';
+
+
+$message2 = 'q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj';
+
+$long = strlen($message2) / 2;
+$sousChaine = substr($message2,6,$long);
+
+$rempmessage = str_replace('@#?',' ',$message2);
+$invmessage = strrev($rempmessage);
+
+echo $invmessage, '\n';
+
+
+$message3 = 'aopi?sgnirts@#?sedhtg+p9l!';
+
+$long = strlen($message3) / 2;
+$sousChaine = substr($message3,6,$long);
+
+$rempmessage = str_replace('@#?',' ',$message3);
+$invmessage = strrev($rempmessage);
+
+echo $invmessage, '\n';
+
+
+?>
+
+résultat : 
+ 1okyrvtgj'ai appris9ns@0
+jv1x@wm+9b*0ysdzaptoutes les ficellesw?e8q
+!l9p+gthdes strings?ipoa
