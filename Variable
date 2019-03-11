@@ -1,0 +1,14 @@
+<?php
+$nomFilm = 'Indiana Jones and the Last Crusade';
+$vu ='oui';
+$annee = 1989;;
+$note = 8.2;
+echo 'nom du film est  :', $nomFilm; 
+echo '<br>';
+echo 'déjà vu :', $vu;
+echo '<br>';
+echo 'annee de sortie :', $annee;
+echo '<br>';
+echo 'note : ', $note;
+
+?>
