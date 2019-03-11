@@ -3,39 +3,36 @@
 $message1 = '0@sn9sirppa@#?ia\'jgtvryko1';
 
 $long = strlen($message1) / 2;
-$sousChaine = substr($message1,6,$long);
+$sousChaine = substr($message1,5,$long);
 
-$rempmessage = str_replace('@#?',' ',$message1);
+$rempmessage = str_replace('@#?',' ',$sousChaine);
 $invmessage = strrev($rempmessage);
 
-echo $invmessage, '\n';
-
+echo $invmessage,' ';
 
 $message2 = 'q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj';
 
 $long = strlen($message2) / 2;
-$sousChaine = substr($message2,6,$long);
+$sousChaine = substr($message2,5,$long);
 
-$rempmessage = str_replace('@#?',' ',$message2);
+$rempmessage = str_replace('@#?',' ',$sousChaine);
 $invmessage = strrev($rempmessage);
 
-echo $invmessage, '\n';
+echo $invmessage,' ';
 
 
 $message3 = 'aopi?sgnirts@#?sedhtg+p9l!';
 
 $long = strlen($message3) / 2;
-$sousChaine = substr($message3,6,$long);
+$sousChaine = substr($message3,5,$long);
 
-$rempmessage = str_replace('@#?',' ',$message3);
+$rempmessage = str_replace('@#?',' ',$sousChaine);
 $invmessage = strrev($rempmessage);
 
-echo $invmessage, '\n';
+echo $invmessage
 
 
 ?>
 
-résultat : 
- 1okyrvtgj'ai appris9ns@0
-jv1x@wm+9b*0ysdzaptoutes les ficellesw?e8q
-!l9p+gthdes strings?ipoa
+resultat :
+j'ai appris toutes les ficelles des strings
