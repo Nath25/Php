@@ -1,0 +1,52 @@
+<?php
+
+class Personne
+{
+    // Attributs
+    public $nom ;
+    public $prenom ;
+    public $dateDeNaissance ;
+    public $adresse;
+
+    public function __construct ($nom, $prenom, $adresse, $dateDeNaissance) {
+        $this->nom = $nom;
+        $this->prenom = $prenom;
+        $this->adresse = $adresse;
+        $this->dateDeNaissance = $dateDeNaissance;
+    }
+
+
+    // Méthodes
+    public function affichInfo() {
+       // $info = "nom : " . $this->nom . "<br/>" . " prénom : " . $this->prenom . "<br/>" . " date de naissance : " . $this->dateDeNaissance . "<br/>" . " adresse : ". $this->adresse
+        $info ="nom : ". $this->nom . " prénom : " . $this->prenom . " date de naissance : " . $this->dateDeNaissance . " adresse : ". $this->adresse;
+        return  $info;
+    }
+
+    public function changeAdress($adresse) {
+        return $this->adresse = $adresse;
+    }
+
+
+    public function calculAge() {
+
+        $nbmois = (time() -  strtotime($this->dateDeNaissance)) / 60/60/24/365 ;
+
+
+        return intval($nbmois);
+
+    }
+
+}
+
+$arthur = new Personne("Pendragon", "Arthur", "forêt de Brocéliande", "03/25/2009");
+
+
+echo $arthur->affichInfo() . "\n";
+//var_dump($arthur);
+
+
+echo "changement d'adresse " . $arthur->changeAdress("rue du Château") . "\n";
+
+
+echo $arthur->calculAge() . "\n";
